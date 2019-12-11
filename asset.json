@@ -1,0 +1,30 @@
+{
+	"name": "waitdialog",
+	"type": "library",
+	"title": "WaitDialog",
+	"author": "alim.oncul@smartface.io",
+	"description": "",
+	"themePath": "themes/waitdialog_style.json",
+	"resources": {
+		"images": [
+			"smartface"
+		],
+		"fonts": [],
+		"classNames": [
+			".sf-flexLayout",
+			".waitDialog",
+			".sf-activityIndicator",
+			".waitDialog-indicator",
+			".sf-gifImageView",
+			".waitDialog-gifIndicator",
+			".sf-imageView",
+			".waitDialog-imgIndicator"
+		]
+	},
+	"dependencies": [],
+	"imagePaths": [
+		"preview/waitDialog.png"
+	],
+	"version": "1.0.0",
+	"readMePath": "README.md"
+}
