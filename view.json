@@ -1,14 +1,14 @@
 {
 	"components": [
 		{
-			"className": ".sf-flexLayout .waitDialog",
-			"id": "a7f9-b022-ac3d-aa33",
+			"className": ".waitDialog",
+			"id": "a753-b4d1-6c8c-9116",
 			"initialized": true,
 			"props": {
 				"children": [
-					"fb4b-9bd5-77ed-4254",
-					"fcbf-0bb9-48be-d0b7",
-					"e9e6-1e0a-6e32-f316"
+					"7a60-471c-4e41-5d67",
+					"ee48-1b46-d2bd-c367",
+					"7f84-b148-8ca6-cacb"
 				],
 				"name": "waitdialog",
 				"parent": "57f4-201f-4bfc-5fc6"
@@ -22,12 +22,12 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-activityIndicator .waitDialog-indicator",
-			"id": "fb4b-9bd5-77ed-4254",
+			"className": ".waitDialog-indicator",
+			"id": "7a60-471c-4e41-5d67",
 			"props": {
 				"children": [],
 				"name": "indicator",
-				"parent": "a7f9-b022-ac3d-aa33",
+				"parent": "a753-b4d1-6c8c-9116",
 				"usePageVariable": true
 			},
 			"source": {
@@ -39,13 +39,13 @@
 			}
 		},
 		{
-			"className": ".sf-gifImageView .waitDialog-gifIndicator",
+			"className": ".waitDialog-gifIndicator",
 			"hiddenComponent": false,
-			"id": "fcbf-0bb9-48be-d0b7",
+			"id": "ee48-1b46-d2bd-c367",
 			"props": {
 				"children": [],
 				"name": "gifIndicator",
-				"parent": "a7f9-b022-ac3d-aa33",
+				"parent": "a753-b4d1-6c8c-9116",
 				"usePageVariable": true
 			},
 			"source": {
@@ -57,13 +57,13 @@
 			}
 		},
 		{
-			"className": ".sf-imageView .waitDialog-imgIndicator",
+			"className": ".waitDialog-imgIndicator",
 			"hiddenComponent": false,
-			"id": "e9e6-1e0a-6e32-f316",
+			"id": "7f84-b148-8ca6-cacb",
 			"props": {
 				"children": [],
 				"name": "imgIndicator",
-				"parent": "a7f9-b022-ac3d-aa33",
+				"parent": "a753-b4d1-6c8c-9116",
 				"usePageVariable": true
 			},
 			"source": {
