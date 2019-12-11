@@ -1,6 +1,6 @@
 {
 	".waitDialog": {
-		"default": "imgIndicator",
+		"default": "indicator",
 		"flexProps": {
 			"positionType": "ABSOLUTE",
 			"justifyContent": "CENTER",

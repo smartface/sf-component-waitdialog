@@ -16,7 +16,7 @@ A marketplace component for loading screens.
 
 - You need to require it on the page you want to use first.
 ```javascript
-const WaitDialog = require("sf_modules/components/WaitDialog");
+const WaitDialog = require("sf_modules/WaitDialog");
 ```
 - Then you want to show it on the screen.
 ```javascript
@@ -29,11 +29,13 @@ WaitDialog.hide();
 
 ## Theming and customization
 
-> The default theme implementation is under `/themes/baseTheme/styles/waitdialog.json` file. DO NOT make changes on this file.
+If you want to use different indicator like gifIndicator or imgIndicator. You need to **edit the json file (WaitDialog.json)** and give **gifImage** property for gifIndicator, **image** property for imgIndicator.
 
-> To change the themes as you like, simply create `themes/${selectedTheme}/styles/waitdialog.json` with your changed styles. You can find best practices for theming under [smartface documentations.](https://developer.smartface.io/docs/using-themes-in-apps)
+> The default theme implementation is under `/themes/baseTheme/styles/WaitDialog.json` file. DO NOT make changes on this file.
 
-> To use different variations of indicators you need to change `default` property on `waitdialog.json`. `indicator`, `gifIndicator`, `imgIndicator` options are available.
+> To change the themes as you like, simply create `themes/${selectedTheme}/styles/WaitDialog.json` with your changed styles. You can find best practices for theming under [smartface documentations.](https://developer.smartface.io/docs/using-themes-in-apps)
+
+> To use different variations of indicators you need to change `default` property on `WaitDialog.json`. `indicator`, `gifIndicator`, `imgIndicator` options are available.
 
 ## Update
 - Run `npm install` under scripts directory. Running `npm update` WILL NOT sync the package with the npm.
