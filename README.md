@@ -27,10 +27,6 @@ WaitDialog.show();
 WaitDialog.hide();
 ```
 
-## Remarks
-
-> **IMPORTANT NOTE** : Initializing **waitdialog** on the constructor might cause unexpected errors and styles for **waitdialog** will not be applied, because the component is not in the context. Make your implementation in `onShow()` or `onLoad()` methods on the page.
-
 ## Theming and customization
 
 > The default theme implementation is under `/themes/baseTheme/styles/waitdialog.json` file. DO NOT make changes on this file.
