@@ -33,6 +33,8 @@ WaitDialog.hide();
 
 > To change the themes as you like, simply create `themes/${selectedTheme}/styles/waitdialog.json` with your changed styles. You can find best practices for theming under [smartface documentations.](https://developer.smartface.io/docs/using-themes-in-apps)
 
+> To use different variations of indicators you need to change `default` property on `waitdialog.json`. `indicator`, `gifIndicator`, `imgIndicator` options are available.
+
 ## Update
 - Run `npm install` under scripts directory. Running `npm update` WILL NOT sync the package with the npm.
 
