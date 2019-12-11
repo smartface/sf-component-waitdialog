@@ -1,14 +1,12 @@
 {
 	"name": "waitdialog",
 	"type": "library",
-	"title": "WaitDialog",
+	"title": "Wait Dialog",
 	"author": "alim.oncul@smartface.io",
-	"description": "",
+	"description": "Loading indicator for application",
 	"themePath": "themes/WaitDialog.json",
 	"resources": {
-		"images": [
-			"smartface"
-		],
+		"images": [],
 		"fonts": [],
 		"classNames": [
 			".waitDialog"
