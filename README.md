@@ -29,7 +29,7 @@ WaitDialog.hide();
 
 ## Theming and customization
 
-If you want to use different indicator like gifIndicator or imgIndicator. You need to **edit the json file (WaitDialog.json)** and give **gifImage** property for gifIndicator, **image** property for imgIndicator.
+If you want to use different indicator like gifIndicator or imgIndicator. First edit the **default** property to gifIndicator or imgIndicator from **json file (WaitDialog.json)**. After that you need to give **gifImage** property for gifIndicator, **image** property for imgIndicator.
 
 > The default theme implementation is under `/themes/baseTheme/styles/WaitDialog.json` file. DO NOT make changes on this file.
 
