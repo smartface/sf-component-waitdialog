@@ -29,13 +29,35 @@ WaitDialog.hide();
 
 ## Theming and customization
 
-If you want to use different indicator like gifIndicator or imgIndicator. First edit the **default** property to gifIndicator or imgIndicator from **json file (WaitDialog.json)**. After that you need to give **gifImage** property for gifIndicator, **image** property for imgIndicator.
-
 > The default theme implementation is under `/themes/baseTheme/styles/WaitDialog.json` file. DO NOT make changes on this file.
 
 > To change the themes as you like, simply create `themes/${selectedTheme}/styles/WaitDialog.json` with your changed styles. You can find best practices for theming under [smartface documentations.](https://developer.smartface.io/docs/using-themes-in-apps)
 
-> To use different variations of indicators you need to change `default` property on `WaitDialog.json`. `indicator`, `gifIndicator`, `imgIndicator` options are available.
+Default indicator is ActivityIndicator. You can customize it from ```.waitDialog-indicator``` class inside **json file (WaitDialog.json)**. If you want to use different indicator like Gif Indicator or Image Indicator. First edit the **default** property to gifIndicator or imgIndicator from **json file (WaitDialog.json)**. After that you need to give **gifImage** property for gifIndicator, **image** property for imgIndicator.
+
+#### Example usage of GifIndicator
+
+- Do not forget to put your gif into assets folder!
+```json
+".waitDialog": {
+    "default": "gifIndicator",
+    "&-gifIndicator": {
+        "gifImage": "example.gif"
+    }
+}
+```
+
+#### Example usage of ImgIndicator
+
+- Do not forget to put your image into images folder!
+```json
+".waitDialog": {
+    "default": "imgIndicator",
+    "&-imgIndicator": {
+        "image": "indicator.png"
+    }
+}
+```
 
 ## Update
 - Run `npm install` under scripts directory. Running `npm update` WILL NOT sync the package with the npm.
