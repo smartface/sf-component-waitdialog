@@ -16,7 +16,7 @@ A marketplace component for loading screens.
 
 - You need to require it on the page you want to use first.
 ```javascript
-const WaitDialog = require("components/WaitDialog");
+const WaitDialog = require("sf_modules/components/WaitDialog");
 ```
 - Then you want to show it on the screen.
 ```javascript
