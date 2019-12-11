@@ -36,19 +36,18 @@
 			"height": 100,
 			"minHeight": 21,
 			"minWidth": 21,
-			"gifImage": "indicator.gif",
-			"visible": false,
+			"visible": true,
 			"imageFillType": "ASPECTFIT"
 		},
 		"&-imgIndicator": {
 			"flexProps": {
-				"positionType": "ABSOLUTE"
+				"positionType": "ABSOLUTE",
+				"alignSelf": "CENTER"
 			},
 			"height": 100,
 			"width": 100,
 			"minHeight": 21,
 			"minWidth": 21,
-			"image": "smartface.png",
 			"imageFillType": "ASPECTFIT",
 			"visible": false
 		}
