@@ -1,6 +1,6 @@
 {
 	".waitDialog": {
-		"default": "indicator",
+		"default": "activityIndicator",
 		"flexProps": {
 			"positionType": "ABSOLUTE",
 			"justifyContent": "CENTER",
@@ -11,12 +11,12 @@
 		"bottom": 0,
 		"top": 0,
 		"height": null,
-		"backgroundColor": "rgba( 255, 255, 255, 0 )",
 		"width": null,
-		"&-indicator": {
-			"color": "rgba( 29, 29, 29, 1 )",
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"&-activityIndicator": {
+			"color": "rgba( 0, 153, 255, 1 )",
 			"flexProps": {
-				"positionType": "ABSOLUTE",
+				"positionType": "RELATIVE",
 				"alignSelf": "CENTER"
 			},
 			"ios": {
@@ -29,27 +29,14 @@
 		},
 		"&-gifIndicator": {
 			"flexProps": {
-				"positionType": "ABSOLUTE",
+				"positionType": "RELATIVE",
 				"alignSelf": "CENTER"
 			},
 			"width": 100,
 			"height": 100,
 			"minHeight": 21,
 			"minWidth": 21,
-			"visible": true,
 			"imageFillType": "ASPECTFIT"
-		},
-		"&-imgIndicator": {
-			"flexProps": {
-				"positionType": "ABSOLUTE",
-				"alignSelf": "CENTER"
-			},
-			"height": 100,
-			"width": 100,
-			"minHeight": 21,
-			"minWidth": 21,
-			"imageFillType": "ASPECTFIT",
-			"visible": false
 		}
 	}
 }

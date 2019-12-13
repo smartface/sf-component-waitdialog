@@ -3,7 +3,7 @@
 	"type": "library",
 	"title": "Wait Dialog",
 	"author": "alim.oncul@smartface.io",
-	"description": "Loading indicator for application",
+	"description": "A useful indicator component for Smartface.",
 	"themePath": "themes/WaitDialog.json",
 	"resources": {
 		"images": [],

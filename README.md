@@ -1,18 +1,20 @@
 
-# WaitDialog
+# WaitDialog - Loading Indicator
 ## waitdialog@1.0.0
 
-A marketplace component for loading screens.
+A useful indicator component for Smartface.
 
-## Installation: 
-- Open the **Marketplace - beta** on the right corner at Smartface IDE & download **waitdialog**
+## Installation
+- Open the **Marketplace**  tab on your Smartface Cloud IDE workspace. 
+- Search for "waitdialog"
+- Download **waitdialog**
 
-## Features:
-- Activity Indicator
-- Gif Indicator
-- Image Indicator
+## Features
+By default an ActivityIndicator will be shown but if desired, a GifImageView could be used also
+- [ActivityIndicator](http://ref.smartface.io/#!/api/UI.ActivityIndicator)
+- [GifImageView](http://ref.smartface.io/#!/api/UI.GifImageView)
 
-## Usage : 
+## Usage 
 
 - You need to require it on the page you want to use first.
 ```javascript
@@ -26,17 +28,40 @@ WaitDialog.show();
 ```javascript
 WaitDialog.hide();
 ```
+- Example code snippet
+```javascript
+const WaitDialog = require("sf_modules/WaitDialog");
 
+const Page1 = extend(Page1Design)(
+    function(_super) {
+        touch.addPressEvent(this.btnRequest, () => {
+            WaitDialog.show(); // Shows the dialog
+            dummyRequest()
+                .then(() => {
+                    WaitDialog.hide(); // Hides the dialog
+                    alert("Response retrieved");
+            });
+        });
+});
+
+function dummyRequest() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve();
+        }, 2500);
+    });
+}
+```
 ## Theming and customization
 
 > The default theme implementation is under `/themes/baseTheme/styles/WaitDialog.json` file. DO NOT make changes on this file.
 
-> To change the themes as you like, simply create `themes/${selectedTheme}/styles/WaitDialog.json` with your changed styles. You can find best practices for theming under [smartface documentations.](https://developer.smartface.io/docs/using-themes-in-apps)
+> To change the themes as you like, simply copy `WaitDialog.json` and extend it with your changed styles.
 
-Default indicator is ActivityIndicator. You can customize it from ```.waitDialog-indicator``` class inside **json file (WaitDialog.json)**. If you want to use different indicator like Gif Indicator or Image Indicator. First edit the **default** property to gifIndicator or imgIndicator from **json file (WaitDialog.json)**. After that you need to give **gifImage** property for gifIndicator, **image** property for imgIndicator.
+> Default indicator is ActivityIndicator. If you want to use different indicator like `GifImageView` Indicator. First edit the **default** property to `gifIndicator` from **json file (WaitDialog.json)**. After that you need to give **gifImage** property for gifIndicator.
 
-#### Example usage of GifIndicator
-
+#### Using GifImageView
+![](demos/iOS-gifImageView.gif)
 - Do not forget to put your gif into assets folder!
 ```json
 ".waitDialog": {
@@ -47,15 +72,12 @@ Default indicator is ActivityIndicator. You can customize it from ```.waitDialog
 }
 ```
 
-#### Example usage of ImgIndicator
-
-- Do not forget to put your image into images folder!
+#### Using ActivityIndicator
+![](demos/iOS-indicator.gif)`
+- This is default one, you don't have to change anything.
 ```json
 ".waitDialog": {
-    "default": "imgIndicator",
-    "&-imgIndicator": {
-        "image": "indicator.png"
-    }
+    "default": "activityIndicator"
 }
 ```
 
