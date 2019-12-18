@@ -1,13 +1,13 @@
 
 # WaitDialog - Loading Indicator
-## waitdialog@1.0.0
+## waitdialog@1.0.2
 
 A useful indicator component for Smartface.
 
 ## Installation
-- Open the **Marketplace**  tab on your Smartface Cloud IDE workspace. 
+- Go to the **Marketplace**  tab on your Smartface Cloud IDE workspace. 
 - Search for "waitdialog"
-- Download **waitdialog**
+- Click download
 
 ## Features
 By default an ActivityIndicator will be shown but if desired, a GifImageView could be used also
@@ -18,7 +18,7 @@ By default an ActivityIndicator will be shown but if desired, a GifImageView cou
 
 - You need to require it on the page you want to use first.
 ```javascript
-const WaitDialog = require("sf_modules/WaitDialog");
+const WaitDialog = require("waitdialog");
 ```
 - Then you want to show it on the screen.
 ```javascript
@@ -30,7 +30,7 @@ WaitDialog.hide();
 ```
 - Example code snippet
 ```javascript
-const WaitDialog = require("sf_modules/WaitDialog");
+const WaitDialog = require("waitdialog");
 
 const Page1 = extend(Page1Design)(
     function(_super) {
@@ -73,7 +73,7 @@ function dummyRequest() {
 ```
 
 #### Using ActivityIndicator
-![](demos/iOS-indicator.gif)`
+![](demos/iOS-indicator.gif)
 - This is default one, you don't have to change anything.
 ```json
 ".waitDialog": {

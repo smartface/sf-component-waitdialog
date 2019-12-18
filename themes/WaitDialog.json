@@ -1,11 +1,6 @@
 {
 	".waitDialog": {
 		"default": "activityIndicator",
-		"flexProps": {
-			"positionType": "ABSOLUTE",
-			"justifyContent": "CENTER",
-			"alignItems": "CENTER"
-		},
 		"left": 0,
 		"right": 0,
 		"bottom": 0,
@@ -13,6 +8,11 @@
 		"height": null,
 		"width": null,
 		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"flexProps": {
+			"positionType": "ABSOLUTE",
+			"justifyContent": "CENTER",
+			"alignItems": "CENTER"
+		},
 		"&-activityIndicator": {
 			"color": "rgba( 0, 153, 255, 1 )",
 			"flexProps": {
